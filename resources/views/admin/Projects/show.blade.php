@@ -5,7 +5,7 @@
 <p>{{$project->description}}</p>
 <p>{{$project->types?->title  ?:'Categoria non definita'}}</p>
 <ul>
-    @foreach ($technologies as $technology) 
+    @foreach ($project->technologies as $technology) 
      <li>{{ $technology->title }}</li>
 
     @endforeach
